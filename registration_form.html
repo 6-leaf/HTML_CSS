@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form action="main.js" method="post">
+        <table cellpadding="5" cellspacing="5">
+            <tbody>
+                <tr>
+                    <td><label for="firstName">First Name: </label></td>
+                    <td><input type="text" name="firstName" id="firstName"></td>
+                </tr>
+                <td><label for="lastName">Last Name: </label></td>
+                <td><input type="text" name="lastName" id="lastName"></td>
+                <tr>
+                    <td><label for="email">Email: </label></td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password: </label></td>
+                    <td><input type="password" name="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="pwd_confirm">Confirm Password: </label></td>
+                    <td><input type="password" name="pwd_confirm" id="pwd_confirm"></td>
+                </tr>
+                <tr>
+                    <td><label for="birthday">Date of Birth: </label></td>
+                    <td><input type="date" name="birthday" id="birthday"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <div>
+            Gender:
+            <input type="radio" name="gender" id="male"> Male
+            <input type="radio" name="gender" id="female"> Female
+            <input type="radio" name="gender" id="other"> Other
+        </div>
+
+        <section>
+            <br>
+            <caption>A short description about yourself: </caption><br>
+            <textarea name="aboutYourself" id="description" cols="50" rows="5">Start here...</textarea>
+
+            <br><br>
+            Favourite Language:
+            <select name="lang" id="lang">
+                <option value="select" disabled selected>Select language</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="c#">C#</option>
+                <option value="c++">C++</option>
+            </select>
+        </section>
+
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
