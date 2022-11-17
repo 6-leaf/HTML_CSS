@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My webpage</title>
+    <!-- # for id and . for class-->
+    <style>
+        table {
+            border: 2px solid darkblue;
+        }
+
+        table th,
+        td {
+            border: 1px dotted;
+            padding: 5px 10px;
+            /* inner border, up; down; right; left*/
+        }
+
+        table th {
+            background-color: lightgreen;
+        }
+
+        table td {
+            background-color: skyblue;
+        }
+
+        table tr:nth-child(even) td {
+            background-color: #e5ed0e;
+        }
+
+        #animationBW {
+            text-align: center;
+            color: #fff;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 5px;
+            animation: blinkingBackground 2s infinite;
+        }
+
+        @keyframes blinkingBackground {
+            0% {
+                background-color: #10c018;
+            }
+
+            25% {
+                background-color: #3077e1;
+            }
+
+            50% {
+                background-color: #ef0a1a;
+            }
+
+            75% {
+                background-color: #e5ed0e;
+            }
+
+            100% {
+                background-color: #090c0d;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Table example in HTML</h2>
+    <table>        
+        <thead>
+            <caption><h2>Table example in HTML</h2></caption>
+            <tr>
+                <th><h2><b>Name</b></h2></th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Aisle number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- <td colspan="2">Milk</td> -->
+                <td>Milk</td>
+                <td>$3.00</td>
+                <td>1</td>
+                <td>A3</td>
+            </tr>
+            <tr>
+                <td>Bread</td>
+                <td>$2.85</td>
+                <td>1</td>
+                <td>A5</td>
+            </tr>
+            <tr>
+                <td>Carrots</td>
+                <td>$2.00</td>
+                <td>2</td>
+                <td>C2</td>
+            </tr>
+            <tr>
+                <td>Apples</td>
+                <td>$3.00</td>
+                <td>4</td>
+                <td>C2</td>
+            </tr>
+            <tr>
+                <td>Apples</td>
+                <td>$3.00</td>
+                <td>4</td>
+                <td>C2</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <br><br><br>
+    <hr>
+    <a href="videopage.html"><h1>Video Page</h1></a>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <a href="https://www.exelenter.com">Exelenter website</a>
+    <br> <br>
+    <hr>
+    <a href="https://www.exelenter.com" target="_blank">
+        Exelenter Website - Open in new tab</a>
+
+    <br> <br>
+    <hr>
+
+    <p>This is officail website for <a href="https://www.exelenter.com">
+            Exelenter</a>
+    </p>
+
+
+    <h1>Funny Cat</h1>
+    <img src="https://s.yimg.com/ny/api/res/1.2/djPKKfbQP1PAJO2ZdPzDPw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTcyMDtjZj13ZWJw/https://s.yimg.com/os/en_US/News/BGR_News/funny-cat.jpg"
+        alt="Funny Cat" width="300">
+
+
+    <p>
+        I am <u><b>bold</b></u> but this one is <b><i>italic</i></b>
+    </p>
+
+    <p>
+        You have a <del>doctor</del> appointment <mark>9:00 am</mark> tomorrow.
+    </p>
+
+    <hr>
+    <hr>
+
+    <p>Orderd List:</p>
+    <ol type="A">
+        <li>One</li>
+        <li>Two</li>
+            <ul>
+                <li>Two.One</li>
+            </ul>
+        <li>Three</li>
+    </ol>
+
+    <p>Unordered list:</p>
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+    </ul>
+
+    <dl>
+        <dt>Apples</dt>
+        <dd>- Really delicious fruits</dd>
+            <ol type="I">
+                <li>Yellow</li>
+                <li>Red</li>
+            </ol>
+    </dl>
+
+    <iframe src="https://www.exelenter.com" frameborder="0" width="500" height="500"></iframe>
+
+    <hr>
+    <!--Commnet here-->
+    <!--This is called in-Line styling-->
+    <h1>Styles - Colors:</h1>
+    <h3 style="color: tomato">I am Tomato</h3>
+    <h3 style="color: orange">i am Orange</h3>
+    <h3 style="background-color: skyblue">Blue Sky</h3>
+    <h3 style="color: white; background-color: black" id="animationBW">Black & White</h3>
+
+</body>
+
+</html>
