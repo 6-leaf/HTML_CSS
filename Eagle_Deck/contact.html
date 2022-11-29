@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Eagle Fence & Deck</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -21,5 +22,37 @@
             </div>
         </div>
     </header><hr>
+    <main>
+        <div>
+            <form action="main.js" method="post" id="contactForm"></form>
+            <table cellpadding="5" cellspacing="5" id="contactTable">
+                <caption ><h2>Contact Us</h2></caption>
+                <tr>
+                    <td><label for="firstName">First Name</label></td>
+                    <td><input type="text" name="firstName" id="firstName"></td>
+                    
+                    <td><label for="lastName">Last Name</label></td>
+                    <td><input type="text" name="lastName" id="lastName"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail</label></td>
+                    <td><input type="email" name="email" id="email"></td>
+                    
+                    <td><label for="phone">Phone Number</label></td>
+                    <td><input type="tel" name="phone" id="phone"></td>
+                </tr>
+               
+            </table>
+
+            <div id="comment">
+                <caption>Contact Us</caption><br>                    
+                <textarea name="comment" cols="60" rows="10"></textarea>
+            </div>
+
+        </div>
+        <div>
+
+        </div>
+    </main>
 </body>
 </html>
